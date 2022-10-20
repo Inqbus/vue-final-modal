@@ -90,5 +90,6 @@
   "vetur": {
     "tags": "vetur/tags.json",
     "attributes": "vetur/attributes.json"
-  }
+  },
+  "dependencies": {}
 }

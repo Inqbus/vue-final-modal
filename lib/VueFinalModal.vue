@@ -347,6 +347,15 @@ export default {
     }
     function mounted() {
       if (props.modelValue) {
+        if (props.resize) {
+          if (props.minWidth !== 0) {
+            dragResizeStyle.value.width = props.minWidth + 'px'
+          }
+          if (props.minHeight !== 0) {
+            dragResizeStyle.value.height = props.minHeight + 'px'
+          }
+        }
+
         emit('_before-open', createModalEvent({ type: '_before-open' }))
         if (emitEvent('before-open', false)) {
           rejectToggle('show')

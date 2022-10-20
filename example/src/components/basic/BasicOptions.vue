@@ -216,9 +216,9 @@ const initData = () => ({
   resizeDirections: ['t', 'tr', 'r', 'br', 'b', 'bl', 'l', 'tl'],
   allowDragSelector: false,
   dragSelector: '.modal__title',
-  minWidth: 0,
+  minWidth: 1024,
   maxWidth: 2000,
-  minHeight: 0,
+  minHeight: 768,
   maxHeight: 2000
 })
 
